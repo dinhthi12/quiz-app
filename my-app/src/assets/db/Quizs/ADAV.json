@@ -1,0 +1,64 @@
+{
+  "questions": [
+    {
+      "questionText": "Google Map Android API đòi hỏi thư viện nào để hiển thị Map?",
+      "options": [
+        {
+          "text": "OpenGL ES version 2",
+          "correct": true
+        },
+        {
+          "text": "HttpClient"
+        },
+        {
+          "text": "Maven SDK"
+        },
+        {
+          "text": "UserVoice SDK"
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "questionText": "Trong Eclipse, làm thế nào để biết được đường dẫn của debug keystore?",
+      "options": [
+        {
+          "text":"Không có cách nào để biết được đường dẫn debug keystore"
+
+        },
+        {
+          "text": "Vào Eclipse, Preferences-\u003eAndroid-\u003eBuild",
+          "correct": true
+        },
+        {
+          "text": "Vào Eclipse, Preferences-\u003eAndroid-\u003eNDK"
+        },
+        {
+          "text": "Vào Eclipse, Preferences-\u003eAndroid-\u003eDDMS"
+        }
+      ],
+      "explanation": ""
+    },
+	    {
+      "questionText": "Làm thế nào để disable một Broadcast Receiver khi nó đã được đăng ký trong AndroidManifest.xml?",
+      "options": [
+        {
+          "text":"Sử dụng lớp PackageReceiverManager"
+
+        },
+        {
+          "text": "Sử dụng lớp PackageManager",
+          "correct": true
+        },
+        {
+          "text": "Sử dụng lớp BroadcastReceiver"
+        },
+        {
+          "text": "Sử dụng lớp BroadcastReceiverManger"
+        }
+      ],
+      "explanation": ""
+    }
+
+  ]
+}

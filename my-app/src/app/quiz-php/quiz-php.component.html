@@ -1,0 +1,63 @@
+<ng-container *ngIf="!isQuizCompleted">
+  <div class="flex justify-around py-3 text-lg font-bold">
+    <div class="score">
+      <!-- <h5>{{points}} Points</h5> -->
+    </div>
+    <div class="question-remaining">
+      <span>Question {{currentQuestion + 1}} of {{quizList.length}}</span>
+    </div>
+    <div class="timer">
+      <h5>{{counter}} sec ⌛</h5>
+    </div>
+  </div>
+  <!-- <div class="w-full bg-gray-200 rounded-full dark:bg-gray-150">
+        <div class="bg-blue-600 h-6 text-lg font-medium text-blue-100 text-center  p-0.5 leading-none rounded-full"
+          [ngStyle]="{'width': progress + '%' }"> {{progress}}%</div>
+      </div> -->
+  <div class="question mt-6">
+    <div class="bg-white px-3 py-4 border rounded-xl  border-slate-300 w-full ">
+      <h3 class="text-xl font-bold">{{quizList[currentQuestion]?.questionText}}</h3>
+    </div>
+  </div>
+  <div class="options mt-2">
+    <ol class="list-decimal ml-5" *ngFor="let option of quizList[currentQuestion]?.options">
+      <li class="mt-2" (click)="answer(currentQuestion+1,option)">
+        <div style="cursor: pointer;
+        " class="px-3 py-4 border rounded-xl border-slate-300 w-full text-lg font-semibold demo">
+
+          <label for="">{{option.text}}</label>
+        </div>
+      </li>
+
+    </ol>
+  </div>
+  <br>
+  <div class="flex justify-between mt-10">
+    <button
+      class=" inline-flex items-center justify-center w-16 h-16 mr-2 text-indigo-100 transition-colors duration-150 bg-blue-700 rounded-full focus:shadow-outline hover:bg-blue-800"
+      (click)="prevQuestion()" [disabled]="currentQuestion === 0">
+      <i class="fa-solid fa-left-long"></i>
+    </button>
+
+    <button style="cursor: pointer;"
+      class=" inline-flex items-center justify-center w-16 h-16 mr-2 text-indigo-100 transition-colors duration-150 bg-blue-700 rounded-full focus:shadow-outline hover:bg-blue-800"
+      (click)="nextQuestion()" [disabled]="currentQuestion === quizList.length -1">
+
+      <i class="fa-solid fa-right-long"></i>
+    </button>
+  </div>
+</ng-container>
+
+<ng-container *ngIf="isQuizCompleted">
+  <div class="row flex justify-center">
+    <div class="text-center col-md-6 col-sm-12">
+      <h3 class="text-xl font-bold">Congratulations!!
+        <br>You have completed the quiz<br> Below is your result:
+      </h3>
+      <p>Total Questions Attempted : {{quizList.length}} </p>
+      <p>Total Correct Answered : {{correctAnswer}} </p>
+      <p>Total Wrong Answered : {{incorrectAnswer}} </p>
+      <p class="text-xl font-bold">Your Score : {{points}} Points </p>
+    </div>
+  </div>
+</ng-container>

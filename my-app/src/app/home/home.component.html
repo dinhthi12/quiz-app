@@ -1,0 +1,54 @@
+<div class="row">
+  <!-- <div class="col-sm-6"> -->
+  <!-- <div class="card">
+                  <div class="card-body">
+                      <h5 class="card-title">Lập trình php</h5>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional
+                          content.</p>
+                      <img src="images/logos/PHPP.png">
+                      <a href="#"  class="btn btn-primary">Làm bài</a>
+
+                  </div>
+              </div> -->
+  <!-- </div> -->
+  <div class="col-sm-6" *ngFor="let home of homeList  | paginate
+  : {
+      itemsPerPage: tableSize,
+      currentPage: page,
+      totalItems: count
+    };
+let i = index">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">{{home.Name}}</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional
+          content.</p>
+        <img src="assets/img/logos/{{home.Logo}}">
+        <a [routerLink]="['quiz/' + home.Id]" class="btn btn-primary">Làm bài</a>
+
+      </div>
+    </div>
+    <br>
+  </div>
+
+  <!-- <div class="col-sm-6" >
+    <div class="card">
+      <div class="card-body">
+        <p class="card-text">With supporting text below as a natural lead-in to additional
+          content.</p>
+        <a routerLink="/quiz-php" class="btn btn-primary">Làm bài</a>
+
+      </div>
+    </div>
+    <br>
+  </div> -->
+
+  <!-- <mat-paginator [length]="100"
+              [pageSize]="10"
+              [pageSizeOptions]="[5, 10, 25, 100]"
+              aria-label="Select page">
+</mat-paginator> -->
+
+</div>
+<!-- <pagination-controls previousLabel="Prev" nextLabel="Next" (pageChange)="onTableDataChange($event)">
+</pagination-controls> -->
