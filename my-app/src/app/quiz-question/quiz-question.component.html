@@ -1,0 +1,70 @@
+<ng-container *ngIf="!isQuizCompleted">
+<div class="flex justify-around py-3 text-lg font-bold">
+
+  <div class="row">
+    <div class="col-sm-8">  <span>Câu hỏi {{currentQuestion + 1}} / {{quizList.length}}</span></div>
+    <div class="col-sm-4"><h5>{{counter}} sec ⌛</h5></div>
+  </div>
+</div>
+  <div class="question mt-6">
+    <div class="bg-white px-3 py-4 border rounded-xl  border-slate-300 w-full ">
+      <h3 class="text-xl font-bold">{{quizList[currentQuestion]?.questionText}}</h3>
+    </div>
+  </div>
+
+
+  <div class="options mt-2">
+    <ol class="list-decimal ml-5" *ngFor="let option of quizList[currentQuestion]?.options">
+      <li class="mt-2" (click)="answer(currentQuestion+1,option)">
+        <div style="cursor: pointer;
+        " class="px-3 py-4 border rounded-xl border-slate-300 w-full text-lg font-semibold hover">
+
+          <label for="">{{option.text}}</label>
+        </div>
+      </li>
+
+    </ol>
+  </div>
+
+  <br>
+
+<div class="flex justify-between mt-10">
+  <button tyle="cursor: pointer;" class="btn btn-light"
+    (click)="prevQuestions()" [disabled]="currentQuestion === 0">
+    <i class="fa-solid fa-left-long"></i>
+  </button>
+
+  <button style="cursor: pointer;"
+    class="btn btn-light"
+    (click)="nextQuestions()" [disabled]="currentQuestion === quizList.length -1">
+
+    <i class="fa-solid fa-right-long"></i>
+  </button>
+</div>
+</ng-container>
+
+<ng-container *ngIf="isQuizCompleted">
+  <!-- <div class="row flex justify-center">
+    <div class="text-center col-md-6 col-sm-12">
+      <h3 class="text-xl font-bold">Congratulations!!
+        <br>You have completed the quiz<br> Below is your result:
+      </h3>
+      <p>Total Questions Attempted : {{quizList.length}} </p>
+      <p>Total Correct Answered : {{correctAnswer}} </p>
+      <p>Total Wrong Answered : {{incorrectAnswer}} </p>
+      <p class="text-xl font-bold">Your Score : {{points}} Points </p>
+    </div>
+  </div> -->
+
+  <div class="card">
+    <h5 class="card-header">Bạn đã hoàn thành bài quiz!!</h5>
+    <div class="card-body">
+      <h5 class="card-title">Tổng số câu hỏi : {{quizList.length}}</h5>
+      <h5 class="card-title">Tổng số câu bạn trả lời đúng : {{correctAnswer}}</h5>
+      <h5 class="card-title">Tổng số câu bạn trả lời sai : {{incorrectAnswer}}</h5>
+      <p class="text-xl font-bold">Tổng điểm : {{points}} </p>
+      <br>
+      <a routerLink="/home" class="btn btn-primary">Quay về trang chủ</a>
+    </div>
+  </div>
+</ng-container>

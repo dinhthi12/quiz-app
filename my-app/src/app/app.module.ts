@@ -32,6 +32,10 @@ import { HomeComponent } from './home/home.component';
 
 import { LoginComponent } from './login/login.component';
 import { QuizPhpComponent } from './quiz-php/quiz-php.component';
+import { QuizQuestionComponent } from './quiz-question/quiz-question.component';
+import { AboutComponent } from './about/about.component';
+import { RegisterComponent } from './register/register.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +48,10 @@ import { QuizPhpComponent } from './quiz-php/quiz-php.component';
     HomeComponent,
     QuizPhpComponent,
     LoginComponent,
+    QuizQuestionComponent,
+    AboutComponent,
+    RegisterComponent,
+    ContactComponent,
   ],
   imports: [
     NgxPaginationModule,

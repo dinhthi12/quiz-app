@@ -1,0 +1,1890 @@
+[
+  {
+    "idSubjects": "ADAV",
+    "questions": [
+      {
+        "questionText": "Google Map Android API đòi hỏi thư viện nào để hiển thị Map?",
+        "options": [
+          {
+            "text": "OpenGL ES version 2",
+            "correct": true
+          },
+          {
+            "text": "HttpClient"
+          },
+          {
+            "text": "Maven SDK"
+          },
+          {
+            "text": "UserVoice SDK"
+          }
+        ],
+        "explanation": ""
+      },
+      {
+        "questionText": "Trong Eclipse, làm thế nào để biết được đường dẫn của debug keystore?",
+        "options": [
+          {
+            "text": "Không có cách nào để biết được đường dẫn debug keystore"
+          },
+          {
+            "text": "Vào Eclipse, Preferences-\u003eAndroid-\u003eBuild",
+            "correct": true
+          },
+          {
+            "text": "Vào Eclipse, Preferences-\u003eAndroid-\u003eNDK"
+          },
+          {
+            "text": "Vào Eclipse, Preferences-\u003eAndroid-\u003eDDMS"
+          }
+        ],
+        "explanation": ""
+      },
+      {
+        "questionText": "Làm thế nào để disable một Broadcast Receiver khi nó đã được đăng ký trong AndroidManifest.xml?",
+        "options": [
+          {
+            "text": "Sử dụng lớp PackageReceiverManager"
+          },
+          {
+            "text": "Sử dụng lớp PackageManager",
+            "correct": true
+          },
+          {
+            "text": "Sử dụng lớp BroadcastReceiver"
+          },
+          {
+            "text": "Sử dụng lớp BroadcastReceiverManger"
+          }
+        ],
+        "explanation": ""
+      },
+      {
+        "questionText": "Trong IntentService, phương thức onHandlerIntent sẽ được tự động gọi trong phương thức nào?",
+        "options": [
+          {
+            "text": "onServiceConnected()"
+          },
+          {
+            "text": "onStartCommand()",
+            "correct": true
+          },
+          {
+            "text": "onStartCommand()"
+          },
+          {
+            "text": "onBind()"
+          }
+        ],
+        "explanation": ""
+      },
+      {
+        "questionText": "Địa chỉ trang web nào cung cấp facebook sdk cho ứng dụng Android?",
+        "options": [
+          {
+            "text": "http://facebook.com"
+          },
+          {
+            "text": "http://facebook.com.vn"
+          },
+          {
+            "text": "https://developers.facebook.com",
+            "correct": true
+          },
+          {
+            "text": "http://developers.facebook.com.vn"
+          }
+        ],
+        "explanation": ""
+      }
+    ]
+  },
+  {
+    "idSubjects": "ADBS",
+    "questions": [
+      {
+        "questionText": "Điều khiển được sử dụng để hiển thị nội dụng trang web trong ứng dụng Android?",
+        "options": [
+          {
+            "text": "Button"
+          },
+          {
+            "text": "WebView",
+            "correct": true
+          },
+          {
+            "text": "Spinner"
+          },
+          {
+            "text": "EditText"
+          }
+        ],
+        "explanation": ""
+      },
+      {
+        "questionText": "Đối với URLConnection, sử dụng phương thức nào để thiết lập timeout cho connection?",
+        "options": [
+          {
+            "text": "setConnectTimeout()",
+            "correct": true
+          },
+          {
+            "text": "setTimeout()"
+          },
+          {
+            "text": "setInternetTimeout()"
+          },
+          {
+            "text": "setURLTimeout()"
+          }
+        ]
+      },
+      {
+        "questionText": "Sử dụng lớp nào để truy cập và thay đổi thông tin trên trình duyệt mặc định của hệ điều hành Android?",
+        "options": [
+          {
+            "text": "WebClient"
+          },
+          {
+            "text": "WebSafariClient"
+          },
+          {
+            "text": "WebFirefoxClient"
+          },
+          {
+            "text": "WebViewClient",
+            "correct": true
+          }
+        ]
+      },
+      {
+        "questionText": "Phương thức nào của WebSettings để cho phép WebView hỗ trợ JavaScript?",
+        "options": [
+          {
+            "text": "setJavaScriptEnabled(false)"
+          },
+          {
+            "text": "setJavaScript(true)"
+          },
+          {
+            "text": "setJavaScriptEnabled(true)",
+            "correct": true
+          },
+          {
+            "text": "setJavaScriptEnable(true)"
+          }
+        ]
+      },
+      {
+        "questionText": "Chương trình sử dụng WebView phải có quyền gì?",
+        "options": [
+          {
+            "text": "android.permission.AUTHENTICATE_ACCOUNTS",
+            "correct": true
+          },
+          {
+            "text": "android.permission.BIND_APPWIDGET"
+          },
+          {
+            "text": "android.permission.INTERNET"
+          },
+          {
+            "text": "android.permission.BIND_INPUT_METHOD"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "idSubjects": "ADTE",
+    "questions": [
+      {
+        "questionText": "Kiểm thử nào không nằm trong kiểm thử hệ thống?",
+        "options": [
+          {
+            "text": "Installation tests"
+          },
+          {
+            "text": "Unit test",
+            "correct": true
+          },
+          {
+            "text": "Performance tests"
+          },
+          {
+            "text": "GUI tests"
+          }
+        ]
+      },
+      {
+        "questionText": "Kiểm thử nào được sử dụng để kiểm thử hoạt động của các thành phần khi chúng làm việc chung với nhau?",
+        "options": [
+          {
+            "text": "Kiểm thử đơn vị"
+          },
+          {
+            "text": "Kiểm thử tích hợp",
+            "correct": true
+          },
+          {
+            "text": "Kiểm thử chấp nhận"
+          },
+          {
+            "text": "Kiểm thử giao diện"
+          }
+        ]
+      },
+      {
+        "questionText": "Android sử dụng Framework nào để kiểm thử đơn vị?",
+        "options": [
+          {
+            "text": "JUnit",
+            "correct": true
+          },
+          {
+            "text": "FUnit"
+          },
+          {
+            "text": "NUnit"
+          },
+          {
+            "text": "AUnit"
+          }
+        ]
+      },
+      {
+        "questionText": "Trong JUnit, phương thức nào được sử dụng để kiểm tra một giá trị có phải Null hay không?",
+        "options": [
+          {
+            "text": "confirmNull"
+          },
+          {
+            "text": "assertNull",
+            "correct": true
+          },
+          {
+            "text": "confirmNulls"
+          },
+          {
+            "text": "confirmNulls"
+          }
+        ]
+      },
+      {
+        "questionText": "Kiểm tra việc lưu thông tin trạng thái của Activity trong phương thức nào?",
+        "options": [
+          {
+            "text": "onSearchRequested"
+          },
+          {
+            "text": "onPause",
+            "correct": true
+          },
+          {
+            "text": "onKeyUp"
+          },
+          {
+            "text": "onNavigateUp"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "idSubjects": "ADUI",
+    "questions": [
+      {
+        "questionText": "System Bar bao gồm các thành phần nào?",
+        "options": [
+          {
+            "text": "Navigation Bar"
+          },
+          {
+            "text": "Status Bar"
+          },
+          {
+            "text": "Notification Bar"
+          },
+          {
+            "text": "Status Bar và Navigation Bar",
+            "correct": true
+          }
+        ]
+      },
+      {
+        "questionText": "Câu nào sau đây đúng khi nói về Frame layout?",
+        "options": [
+          {
+            "text": "Frame layout là loại layout luôn lấy tọa độ gốc là top- left và nó xếp chồng view sau lên view trước",
+            "correct": true
+          },
+          {
+            "text": "Frame layout sắp xếp các view ở chính xác tọa độ mong muốn thông qua các thuộc tính layout_x và layout_y"
+          },
+          {
+            "text": "Frame layout sắp xếp các view theo hàng ngang hoặc hàng dọc, trong một cột hoặc một dòng"
+          },
+          {
+            "text": "Frame layout sắp xếp các view thành các cột và dòng. Mỗi view trong 1 tableRow sẽ là 1 cột"
+          }
+        ]
+      },
+      {
+        "questionText": "Trong android, interface được tạo từ các điều khiển gì?",
+        "options": [
+          {
+            "text": "Button"
+          },
+          {
+            "text": "View và View group",
+            "correct": true
+          },
+          {
+            "text": "View"
+          },
+          {
+            "text": "View group"
+          }
+        ]
+      },
+      {
+        "questionText": "Điều khiển nào sau đây không phải là một layout?",
+        "options": [
+          {
+            "text": "RelativeLayout"
+          },
+          {
+            "text": "LeftAlignLayout",
+            "correct": true
+          },
+          {
+            "text": "AbsoluteLayout"
+          },
+          {
+            "text": "RelativeLayout"
+          }
+        ]
+      },
+      {
+        "questionText": "Các điều khiển nào sau đây hiển thị trên Navigation Bar?",
+        "options": [
+          {
+            "text": "Recent"
+          },
+          {
+            "text": "Tất cả các phương án đều đúng",
+            "correct": true
+          },
+          {
+            "text": "Home"
+          },
+          {
+            "text": "Back"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "idSubjects": "ASNE",
+    "questions": [
+      {
+        "questionText": "Lập trình viên thường gán giá trị mặc định cho các điều khiển trong phương thức xử lý sự kiện ........... của trang",
+        "options": [
+          {
+            "text": "Prerender"
+          },
+          {
+            "text": "Init"
+          },
+          {
+            "text": "Load",
+            "correct": true
+          },
+          {
+            "text": "Unload"
+          }
+        ]
+      },
+      {
+        "questionText": "Bạn hãy cho biết định nghĩa nào sau đây là nói về ứng dụng web?",
+        "options": [
+          {
+            "text": "Các phương án đều đúng"
+          },
+          {
+            "text": "Là ứng dụng chỉ chạy trên môi trường mobile"
+          },
+          {
+            "text": "Là ứng dụng chỉ chạy trên một máy tính đơn",
+            "correct": true
+          },
+          {
+            "text": "Là một ứng dụng client/server được truy cập thông qua trình duyệt Web trên mạng Internet hoặc intranet"
+          }
+        ]
+      },
+      {
+        "questionText": "Để hiển thị dòng \"Hello World\" trên trang web, trong ASP.Net cần dùng lệnh nào?",
+        "options": [
+          {
+            "text": "Response.Write(\"Hello World\");",
+            "correct": true
+          },
+          {
+            "text": "Document.Write(\"Hello World\");"
+          },
+          {
+            "text": "\"Hello World\""
+          },
+          {
+            "text": "Request.Write((\"Hello World\");"
+          }
+        ]
+      },
+      {
+        "questionText": "Khi chạy một ứng dụng ASP.NET, nếu ngoại lệ xảy ra nhưng không được bắt và xử lý, ứng dụng sẽ chuyển sang chế độ ngắt và hộp thoại ............ sẽ hiển thị.",
+        "options": [
+          {
+            "text": "Exception Assistant",
+            "correct": true
+          },
+          {
+            "text": "Exception Help"
+          },
+          {
+            "text": "Các phương án đều sai"
+          },
+          {
+            "text": "Exception"
+          }
+        ]
+      },
+      {
+        "questionText": "Theo bạn, câu nào sau đây là sai khi nói về web động?",
+        "options": [
+          {
+            "text": "Viết hoàn toàn bằng ngôn ngữ HTML",
+            "correct": true
+          },
+          {
+            "text": "Có tương tác với người dùng, nội dung của trang hiển thị khác nhau đáp ứng các sự kiện."
+          },
+          {
+            "text": "Có thể dùng để hiển thị và cung cấp thông tin"
+          },
+          {
+            "text": "Lưu dữ liệu trong cơ sở dữ liệu"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "idSubjects": "CLCO",
+    "questions": [
+      {
+        "questionText": "Dịch vụ Amazon Elastic Compute Cloud có chức năng chính là gì?",
+        "options": [
+          {
+            "text": "Hỗ trợ lưu trữ web",
+            "correct": true
+          },
+          {
+            "text": "Hỗ trợ cập nhật dữ liệu"
+          },
+          {
+            "text": "Hỗ trợ thay đổi kiến trúc mô hình cloud"
+          },
+          {
+            "text": "Hỗ trợ truy xuất dữ liệu"
+          }
+        ]
+      },
+      {
+        "questionText":"Câu nào là đúng đối với UDDI?",
+        "options": [
+          {
+            "text":"UDDI tương tự như WSDL"
+          },
+          {
+            "text": "UDDI là cách viết khác của WSDL"
+          },
+          {
+            "text": "UDDI cho phép ghi thông tin về doanh nghiệp và chi tiết sử dụng dịch vụ web.",
+            "correct": true
+          },
+          {
+            "text": "UDDI không cho phép ghi thông tin về doanh nghiệp và chi tiết sử dụng dịch vụ web, nó chỉ được thực hiện qua WSDL"
+          }
+        ]
+      },
+      {
+        "questionText":"Câu nào là đúng đối với WSDL?",
+        "options": [
+          {
+            "text": "WSDL kết nối trực tiếp với cơ sở dữ liệu SQLite và trả về kết quả cho người dùng"
+          },
+          {
+            "text": "WSDL là cầu nối giữa người sử dụng với Database"
+          },
+          {
+            "text": "WSDL Cho phép các nhà phát triển ghi thông tin dịch vụ web",
+            "correct": true
+          },
+          {
+            "text": "WSDL không cho phép các nhà phát triển ghi thông tin dịch vụ web"
+          }
+        ]
+      },
+      {
+        "questionText": "WSDL là viết tắt của cụm từ nào?",
+        "options": [
+          {
+            "text": "Width Server Description Language"
+          },
+          {
+            "text": "Width Services Description Language"
+          },
+          {
+            "text": "Web Services Description Language",
+            "correct": true
+          },
+          {
+            "text": "Web Server Description Language"
+          }
+        ]
+      },
+      {
+        "questionText": "API là viết tắt của cụm từ nào?",
+        "options": [
+          {
+            "text": "Application Private Interface"
+          },
+          {
+            "text": "Application Programming Internet"
+          },
+          {
+            "text": "Application Programming Interface",
+            "correct": true
+          },
+          {
+            "text": "Application Public Interface"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "idSubjects": "DBAV",
+    "questions": [
+      {
+        "questionText": "Chọn phát biểu đúng về SQL Server A. Là hệ quản trị nội dung cho phép đồng thời một lúc có nhiều người dùng truy xuất đến dữ liệu. B. SQL Server sử dụng điển hình trong các hệ thống nhỏ đến trung bình chạy trên một hoặc nhiều máy chủ Windows C. Là hệ quản",
+        "options": [
+          {
+            "text": "B,D Đúng"
+          },
+          {
+            "text": "D Đúng"
+          },
+          {
+            "text": "A,B Đúng"
+          },
+          {
+            "text": "C, B Đúng",
+            "correct": true
+          }
+        ]
+      },
+      {
+        "questionText": "SQL sử dụng ngôn ngữ nào sau đây để truy vấn CSDL: A. SQL B. PL-SQL C. Transact-SQL",
+        "options": [
+          {
+            "text": "B Đúng"
+          },
+          {
+            "text": "Cả A, B, C đều sai"
+          },
+          {
+            "text": "C Đúng",
+            "correct": true
+          },
+          {
+            "text": "A Đúng"
+          }
+        ]
+      },
+      {
+        "questionText": "Câu lệnh nào sau đây là câu lệnh điều khiển dữ liệu (DCL) A DENY B CREATE C GRANT D REVOKE",
+        "options": [
+          {
+            "text": "B, C , D đúng"
+          },
+          {
+            "text": "A, B, C đúng"
+          },
+          {
+            "text": "A, C, D đúng",
+            "correct": true
+          },
+          {
+            "text": "A, B , Dđúng"
+          }
+        ]
+      },
+      {
+        "questionText": "Lập trình viên thường gán giá trị mặc định cho các điều khiển trong phương thức xử lý sự kiện ........... của trang",
+        "options": [
+          {
+            "text": "Prerender"
+          },
+          {
+            "text": "Init"
+          },
+          {
+            "text": "Load",
+            "correct": true
+          },
+          {
+            "text": "Unload"
+          }
+        ]
+      },
+      {
+        "questionText": "Để khởi động và dừng SQL Server sử dụng công cụ nào dưới đây:",
+        "options": [
+          {
+            "text": "SQL Server Start/Stop Manager"
+          },
+          {
+            "text": "SQL Server Configuration Management"
+          },
+          {
+            "text": "SQL Server Configuration Manager",
+            "correct": true
+          },
+          {
+            "text": "SQL Server Management Studio"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "idSubjects": "DBBS",
+    "questions": [
+      {
+        "questionText": "Các ứng dụng nào sau đây có thể truy cập tới hệ quản trị CSDL SQL Server",
+        "options": [
+          {
+            "text": "Ứng dụng .NET"
+          },
+          {
+            "text": "Ứng dụng Java"
+          },
+          {
+            "text": "Tất cả đáp án đều đúng",
+            "correct": true
+          },
+          {
+            "text": "Ứng dụng Visual Basic 6"
+          }
+        ]
+      },
+      {
+        "questionText": "Phát biểu nào sau đây ĐÚNG về T-SQL?",
+        "options": [
+          {
+            "text": "Có thể sử dụng T-SQL để thao tác trên mọi hệ quản trị CSDL quan hệ"
+          },
+          {
+            "text": "T-SQL là ngôn ngữ mở rộng của SQL chuẩn, cung cấp thêm các tính năng lập trình",
+            "correct": true
+          },
+          {
+            "text": "T-SQL là tên gọi khác của ngôn ngữ SQL"
+
+          },
+          {
+            "text": "Tất cả các đáp án đều sai"
+          }
+        ]
+      },
+      {
+        "questionText": "Nếu quá trình thực thi một câu lệnh SQL xảy ra lỗi cú pháp. SQL Server sẽ thông báo lỗi đó bằng cách",
+        "options": [
+          {
+            "text": "Hiển thị đường màu xanh lượn sóng gạch chân phần câu lệnh nhập sai và hiển thị một thông báo lỗi trong Tab Message"
+          },
+          {
+            "text": "Hiển thị đường màu xanh lượn sóng gạch chân phần câu lệnh nhập sai và hiển thị một thông báo lỗi trong Tab Systax Error"
+          },
+          {
+            "text": "Hiển thị đường màu đỏ lượn sóng gạch chân phần câu lệnh nhập sai và hiển thị một thông báo lỗi trong Tab Message",
+            "correct": true
+          },
+          {
+            "text": "Hiển thị đường màu đỏ lượn sóng gạch chân phần câu lệnh nhập sai và hiển thị một thông báo lỗi trong Tab Systax Error"
+          }
+        ]
+      },
+      {
+        "questionText": "Thao tác nào sau đây có thể thực hiện trên lược đồ CSDL?",
+        "options": [
+          {
+            "text": "Định nghĩa độ rộng của cột"
+          },
+          {
+            "text": "Tất cả đáp án đều đúng"
+          },
+          {
+            "text": "Thêm cột",
+            "correct": true
+          },
+          {
+            "text": "Thêm dữ liệu cho một bảng CSDL"
+          }
+        ]
+      },
+      {
+        "questionText": "Nên sử dụng kiểu dữ liệu nào sau đây để lưu chuỗi với độ dài cố định hỗ trợ UNICODE",
+        "options": [
+          {
+            "text": "Varchar"
+          },
+          {
+            "text": "Char"
+          },
+          {
+            "text": "Nchar",
+            "correct": true
+          },
+          {
+            "text": "Nvarchar"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "idSubjects": "GAME",
+    "questions": [
+      {
+        "questionText": "Đâu không phải là đặc điểm của Unity?",
+        "options": [
+          {
+            "text": "Lighting"
+          },
+          {
+            "text": "Rendering"
+          },
+          {
+            "text": "Assets",
+            "correct": true
+          },
+          {
+            "text": "Physics"
+          }
+        ]
+      },
+      {
+        "questionText": "Để hiển thị mọi thông tin về đối tượng đang làm việc một cách chi tiết, kể cả những Components được đính kèm và những thuộc tính của nó ta sử dụng mục nào sau đây?",
+        "options": [
+          {
+            "text": "Inspector",
+            "correct": true
+          },
+          {
+            "text": "Game"
+          },
+          {
+            "text": "Project"
+          },
+          {
+            "text": "Hierachy"
+          }
+        ]
+      },
+      {
+        "questionText": "Thanh công cụ nào sau đây điều khiển việc bố trí giao diện màn hình?",
+        "options": [
+          {
+            "text": "Control Object"
+          },
+          {
+            "text": "Layers"
+          },
+          {
+            "text": "Layout",
+            "correct": true
+          },
+          {
+            "text": "TestGame"
+          }
+        ]
+      },
+      {
+        "questionText": "Trên thanh công cụ Control Object, công cụ nào cho phép di chuyển đến một khu vực nào đó trong Scene bằng cách kéo thả chuột?",
+        "options": [
+          {
+            "text": "Rotate tool"
+          },
+          {
+            "text": "Hand tool",
+            "correct": true
+          },
+          {
+            "text": "Scale tool"
+          },
+          {
+            "text": "Move tool"
+          }
+        ]
+      },
+      {
+        "questionText": "Phím E là phím tắt của công cụ nào sau đây?",
+        "options": [
+          {
+            "text": "Hand tool"
+          },
+          {
+            "text": "Rotate tool",
+            "correct": true
+          },
+          {
+            "text": "Scale tool"
+          },
+          {
+            "text": "Move tool"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "idSubjects": "HTCS",
+    "questions": [
+      {
+        "questionText": "Sử dụng phần tử nào của HTML5 để xem phim trên Web?",
+        "options": [
+          {
+            "text":"\u003cyoutube\u003e"
+          },
+          {
+            "text": "\u003cmedia\u003e"
+          },
+          {
+            "text": "\u003cclip\u003e",
+            "correct": true
+          },
+          {
+            "text": "\u003cvideo\u003e"
+          }
+        ]
+      },
+      {
+        "questionText": "Đâu là công nghệ mới của HTML5 cho phép người dùng lưu trữ dữ liệu ngay trên trình duyệt Web?",
+        "options": [
+          {
+            "text": "Web 2.0"
+          },
+          {
+            "text": "Web storage",
+            "correct": true
+          },
+          {
+            "text": "Web server"
+          },
+          {
+            "text": "Web code"
+          }
+        ]
+      },
+      {
+        "questionText": "Phần tử transitions thuộc công nghệ nào sau đây?",
+        "options": [
+          {
+            "text": "HTML5"
+          },
+          {
+            "text": "HTML4"
+          },
+          {
+            "text": "CSS3",
+            "correct": true
+          },
+          {
+            "text": "CSS2"
+          }
+        ]
+      },
+      {
+        "questionText": "Với phiên bản nào của HTML bạn có thể xem video và nghe nhạc trực tiếp trên Web mà không cần plug in?",
+        "options": [
+          {
+            "text": "HTML5",
+            "correct": true
+          },
+          {
+            "text": "HTML4"
+          },
+          {
+            "text": "HTML3"
+          },
+          {
+            "text": "CSS"
+          }
+        ]
+      },
+      {
+        "questionText": "Đâu là từ viết tắt của Giao diện lập trình ứng dụng?",
+        "options": [
+          {
+            "text": "AFS"
+          },
+          {
+            "text": "AKT"
+          },
+          {
+            "text": "API",
+            "correct": true
+          },
+          {
+            "text": "ATK"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "idSubjects": "INMA",
+    "questions": [
+      {
+        "questionText": "Trước khi viết một thông điệp marketing cho website của bạn, bạn cần phải:",
+        "options": [
+          {
+            "text": "Tìm hiểu xem khách hàng lý tưởng của mình là ai, đặc điểm của họ là gì",
+
+            "correct": true
+          },
+          {
+            "text": "Tìm hiểu xem những đối thủ đang viết như thế nào và bắt chước họ"
+          },
+          {
+            "text": "Tìm hiểu xem khách hàng lý tưởng của mình bao nhiêu tuổi"
+          },
+          {
+            "text": "Tìm hiểu xem khách hàng lý tưởng của mình giới tính là gì"
+          }
+        ]
+      },
+      {
+        "questionText":"Khi khách hàng lên website của bạn để xem hàng, điều gì sẽ có thể ngăn cản họ thực hiện hành động mua hàng?",
+        "options": [
+          {
+            "text": "Giao diện website quá xấu"
+          },
+          {
+            "text": "Họ không tin tưởng, họ sợ bị lừa",
+            "correct": true
+          },
+          {
+            "text": "Trang web có quá nhiều mặt hàng"
+          },
+          {
+            "text": "Trang web có quá ít mặt hàng"
+          }
+        ]
+      },
+      {
+        "questionText": "Thị trường là gì?",
+        "options": [
+          {
+            "text": "Thị trường của một hàng hóa là số lượng người mua và người bán hàng hóa đó"
+          },
+          {
+            "text": "Thị trường của một hàng hóa là tập tất cả những người đang cung cấp, đang bán hàng hóa đó"
+          },
+          {
+            "text": "Thị trường của một hàng hóa là là tập tất cả những người, những tổ chức có cùng nhu cầu về mặt hàng hóa đó công với tất cả những người đang bán hàng hóa đó",
+            "correct": true
+          },
+          {
+            "text": "Thị trường của một hàng hóa là là tập tất cả những người, những tổ chức có cùng nhu cầu về mặt hàng hóa đó công với tất cả những người đang bán hàng hóa đó"
+          }
+        ]
+      },
+      {
+        "questionText": "Hãy chọn ra thông điệp sẽ xóa tan sự nghi ngờ về khả năng hoạt động được của sản phẩm từ khách hàng tốt nhất:",
+        "options": [
+          {
+            "text": "“Nếu sản phẩm của chúng tôi không hoạt động như cam kết, chúng tôi sẽ hoàn tiền 100% cho bạn”"
+          },
+          {
+            "text": "“Sản phẩm của chúng tôi được bảo hành trong 06 tháng”"
+          },
+          {
+            "text": "“Nếu sản phẩm của chúng tôi không hoạt động như cam kết, chúng tôi sẽ hoàn tiền 150% cho bạn”",
+            "correct": true
+          },
+          {
+            "text": "“Sản phẩm của chúng tôi được bảo hành trong 05 năm và đã được hàng trăm nghìn người sử dụng”"
+          }
+        ]
+      },
+      {
+        "questionText": "Tập đoàn Tân Hiệp Phát đã chọn thị trường ngách là sản phẩm gì để cạnh tranh lại với 02 đại gia trong lĩnh vực đồ uống là Coca-Cola và Pepsi?",
+        "options": [
+          {
+            "text": "Trà xanh không độ",
+            "correct": true
+          },
+          {
+            "text": "Nước uống tăng lực Sting"
+          },
+          {
+            "text": "Sữa đậu nành"
+          },
+          {
+            "text": "Bia"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "idSubjects": "JAAV",
+    "questions": [
+      {
+        "questionText": "Đối tượng container trong GUI là gì?",
+        "options": [
+          {
+            "text": "Là class bất kỳ có subclass"
+          },
+          {
+            "text": "Là một hình chữ nhật"
+          },
+          {
+            "text": "Là một thành phần có thể chứa các thành phần khác bên trong",
+            "correct": true
+          },
+          {
+            "text": "Là một tên khác trong một mảng số"
+          }
+        ]
+      },
+      {
+        "questionText": "Sự kiện nào được tạo ra khi người click vào một JButton ?",
+        "options": [
+          {
+            "text": "ButtonSelectionListener"
+          },
+          {
+            "text": "ActionListener"
+          },
+          {
+            "text": "ActionEvent",
+            "correct": true
+          },
+          {
+            "text": "ValueChangeEvent"
+          }
+        ]
+      },
+      {
+        "questionText": "Để thiết lập kiể trình bày dạng ô lưới với 4 hàng và mỗi hàng 5 cột, sử dụng lệnh nào trong số các lệnh sau đây:",
+        "options": [
+          {
+            "text": "setLayout(new GridLayout(4,5))",
+            "correct": true
+          },
+          {
+            "text": "setLayout(new GridLayouts(5,4))"
+          },
+          {
+            "text": "setLayout(new GridLayout(5,4))"
+          },
+          {
+            "text": "setLayout(new GridBagLayout(5,4))"
+          }
+        ]
+      },
+      {
+        "questionText": "Kiểu trình bày nào cho phép đặt các thành phần vào container theo các hướng east, west, south, north, center ?",
+        "options": [
+          {
+            "text": "CardLayout"
+          },
+          {
+            "text": "FlowLayout"
+          },
+          {
+            "text": "BorderLayout",
+            "correct": true
+          },
+          {
+            "text": "GridBagLayout"
+          }
+        ]
+      },
+      {
+        "questionText": "JComponent là subclass trực tiếp của class nào?",
+        "options": [
+          {
+            "text": "JFrame"
+          },
+          {
+            "text": "AWT"
+          },
+          {
+            "text": "Component"
+          },
+          {
+            "text": "Container",
+            "correct": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "idSubjects": "JABS",
+    "questions": [
+      {
+        "questionText": "Công ty nào đã mua lại Sun microsystem?",
+        "options": [
+          {
+            "text": "ibm"
+          },
+          {
+            "text": "apple"
+          },
+          {
+            "text": "oracle",
+            "correct": true
+          },
+          {
+            "text": "yahoo"
+          }
+        ]
+      },
+      {
+        "questionText": "Kết quả của lệnh 34/4?",
+        "options": [
+          {
+            "text": "6",
+            "correct": true
+          },
+          {
+            "text": "8.5"
+          },
+          {
+            "text": "8"
+          },
+          {
+            "text": "9"
+          }
+        ]
+      },
+      {
+        "questionText": "Xem đoạn code sau:void start() { A a = new A(); B b = new B(); /*Dòng 3*/ a.s(b); b = null; /* Dòng 5 */ a = null; /* Dòng 6 */ System.out.println(\"start completed\"); /* Dòng 7 */} Sau khi đối tượng B được tạo ở dòng 3, khi nào garbage sẽ cân nhắc hủy đối",
+        "options": [
+          {
+            "text": "Sau dòng 5"
+          },
+          {
+            "text": "Sau dòng 7"
+          },
+          {
+            "text": "Sau dòng 6"
+          },
+          {
+            "text": "Không có cách nào biết được chắc chắn",
+            "correct": true
+          }
+        ]
+      },
+      {
+        "questionText": "Mục đích của hàm tạo (constructor) của lớp là gì?",
+        "options": [
+          {
+            "text": "Tạo tên phương thức"
+          },
+          {
+            "text": "Khởi tạo một đối tượng khi nó được gọi",
+            "correct": true
+          },
+          {
+            "text": "Dọn dẹp bộ nhớ không cần thiết"
+          },
+          {
+            "text": "Là công cụ của garbage collection"
+          }
+        ]
+      },
+      {
+        "questionText": "Từ khóa nào giúp cho chúng ta có thể tham chiếu tới lớp và rất tiện lợi khi cần truy cập các biến và phương thức trong lớp?",
+        "options": [
+          {
+            "text": "finalize"
+          },
+          {
+            "text": "sync"
+          },
+          {
+            "text": "this",
+            "correct": true
+          },
+          {
+            "text": "new()"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "idSubjects": "JSPR",
+    "questions": [
+      {
+        "questionText": "Thuộc tính vlinkColor của đối tượng document trả về kết quả nào ?",
+        "options": [
+          {
+            "text": "Màu của liên kết"
+          },
+          {
+            "text": "Màu nền của trang web"
+          },
+          {
+            "text": "Màu của liên kết đã kích hoạt",
+            "correct": true
+          },
+          {
+            "text": "Màu của liên kết khi trỏ đến"
+          }
+        ]
+      },
+      {
+        "questionText": "Cho biết kết quả sau khi thực hiện câu lệnh: for(prop in navigator){ document.write(prop+\": \"+ navigator [prop]+\"\";}",
+        "options": [
+          {
+            "text": "Hiển thị các phương thức của đối tượng navigator"
+          },
+          {
+            "text": "Hiển thị chức năng của các phương thức của đối tượng navigator"
+          },
+          {
+            "text": "Hiển thị các thuộc tính của đối tượng navigator",
+            "correct": true
+          },
+          {
+            "text": "Hiển thị chức năng của các thuộc tính của đối tượng navigator"
+          }
+        ]
+      },
+      {
+        "questionText": "Sự kiện nào được kích hoạt sau khi trình duyệt đã tải xong tư liệu HTML , applet hay image?",
+        "options": [
+          {
+            "text": "onKeyUp()"
+          },
+          {
+            "text": "onLoad()",
+            "correct": true
+          },
+          {
+            "text": "onKeyPress()"
+          },
+          {
+            "text": "onScroll()"
+          }
+        ]
+      },
+      {
+        "questionText": "Để hiển thị liên kết mà ko có gạch chân bên dưới, người ta dùng thuộc tính nào?",
+        "options": [
+          {
+            "text": "a {underline:none}"
+          },
+          {
+            "text": "a {decoration:no underline}"
+          },
+          {
+            "text": "a {text-decoration:no underline}"
+          },
+          {
+            "text": "a {text-decoration:none}",
+            "correct": true
+          }
+        ]
+      },
+      {
+        "questionText": "Trong cấu trúc form, đa số các phần tử được đặt trong cặp thẻ nào?",
+        "options": [
+          {
+            "text": "\u003cselect\u003e…\u003c/select\u003e"
+          },
+          {
+            "text": "\u003cinput\u003e…\u003c/input\u003e",
+            "correct": true
+          },
+          {
+            "text": "\u003cspan\u003e..\u003c/span\u003e"
+          },
+          {
+            "text": "\u003cinsert\u003e…\u003c/insert\u003e"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "idSubjects": "LAYO",
+    "questions": [
+      {
+        "questionText": "Có mấy cách sử dụng css cho web?",
+        "options": [
+          {
+            "text": "Có 3 cách: inline, embedded và linked",
+            "correct": true
+          },
+          {
+            "text": "Có 4 cách: inline, embedded, linked và css riêng"
+          },
+          {
+            "text": "Có 1 cách: inline"
+          },
+          {
+            "text": "Có 2 cách: inline và embedded"
+          }
+        ]
+      },
+      {
+        "questionText": "Thẻ dòng (inline) có thể chứa thẻ khối (block)?",
+        "options": [
+          {
+            "text": "Đúng"
+          },
+          {
+            "text": "Sai",
+            "correct": true
+          }
+
+        ]
+      },
+      {
+        "questionText": "Để viết chú thích trong các file css người sử dụng có thể sử dụng cách nào dưới đây: a. \u003c!-- chú thích--\u003e b. // chú thích c. -- chú thích d. /* chú thích */",
+        "options": [
+          {
+            "text": "a, c"
+          },
+          {
+            "text": "d"
+          },
+          {
+            "text": "a",
+            "correct": true
+          },
+          {
+            "text": "a, d"
+          }
+        ]
+      },
+      {
+        "questionText": "Nội dung của trang web nằm trong thẻ nào?",
+        "options": [
+          {
+            "text": "Thẻ body",
+            "correct": true
+          },
+          {
+            "text": "Thẻ title"
+          },
+          {
+            "text": "Thẻ style"
+          },
+          {
+            "text": "Thẻ head"
+          }
+        ]
+      },
+      {
+        "questionText": "Thẻ nào là thẻ khối (block) trong các thẻ sau:",
+        "options": [
+          {
+            "text": "Thẻ em"
+          },
+          {
+            "text": "Thẻ a"
+          },
+          {
+            "text": "Thẻ h1",
+            "correct": true
+          },
+          {
+            "text": "Thẻ strong"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "idSubjects": "MOWE",
+    "questions": [
+      {
+        "questionText": "Phát triển web di động bắt buộc phải sử dụng IDE Dreamweaver, đúng hay sai?",
+        "options": [
+          {
+            "text": "Đúng"
+          },
+          {
+            "text": "Sai",
+            "correct": true
+          }
+        ]
+      },
+      {
+        "questionText": "\"Máy chủ web sử dụng chỉ thị AddType trong cấu hình mod_mine để thêm kiểu MIME mới vào file cấu hình mime.types, httpd.conf hay .htaccess\" là kiểu máy chủ nào sau đây?",
+        "options": [
+          {
+            "text": "Máy chủ Nginx"
+          },
+          {
+            "text": "Máy chủ Window"
+          },
+          {
+            "text":  "Máy chủ Apache",
+            "correct": true
+          },
+          {
+            "text": "Máy chủ Microsoft IIS"
+          }
+        ]
+      },
+      {
+        "questionText": "Những giải pháp dành cho web trên máy tính như: độ phân giải, kích thước hoàn toàn sử dụng được trên thiết bị di động. Đúng hay sai?",
+        "options": [
+          {
+            "text": "Sai",
+            "correct": true
+          },
+          {
+            "text": "Đúng"
+          }
+        ]
+      },
+      {
+        "questionText": "Danh sách kiểu MIME được hỗ trợ thông qua các giá trị nằm trong trường nào của HTTP Request?",
+        "options": [
+          {
+            "text": "Trường Degree"
+          },
+          {
+            "text": "Trường Save"
+          },
+          {
+            "text": "Trường Agree"
+          },
+          {
+            "text": "Trường Accept",
+            "correct": true
+          }
+        ]
+      },
+      {
+        "questionText": "Thành phần nào mô tả kiểu file tài liệu truyền cho máy khách trong hồi đáp HTTP (HTTP Respone)?",
+        "options": [
+          {
+            "text": "MIMI"
+          },
+          {
+            "text": "MIME",
+            "correct": true
+          },
+          {
+            "text": "MIMO"
+          },
+          {
+            "text": "MIMA"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "idSubjects": "PMAG",
+    "questions": [
+      {
+        "questionText": "Phẩm chất nào không nằm trong 7 phẩm chất quan trọng mà Product Owner cần có?",
+        "options": [
+          {
+            "text": "Có kỹ năng của một Tester",
+            "correct": true
+          },
+          {
+            "text": "Có tầm nhìn và kiến thức rõ ràng về sản phẩm"
+          },
+          {
+            "text": "Biết cách quản lý thành công kỳ vọng của các bên liên quan và đôi khi là mâu thuẫn về độ ưu tiên"
+          },
+          {
+            "text": "Biết cách thu thập yêu cầu để chuyển tầm nhìn sản phẩm thành một Product Backlog tốt"
+          }
+        ]
+      },
+      {
+        "questionText": "Cách tiếp cận tầm nhìn sản phẩm sử dụng kỹ thuật gì?",
+        "options": [
+          {
+            "text": "5W",
+            "correct": true
+          },
+          {
+            "text": "5S"
+          },
+          {
+            "text": "5X"
+          },
+          {
+            "text": "5Y"
+          }
+        ]
+      },
+      {
+        "questionText": "Phương án nào không phải lợi ích khi xác định mục tiêu của Sprint?",
+        "options": [
+          {
+            "text": "Hỗ trợ giao tiếp giữa các phòng ban trong công ty",
+            "correct": true
+          },
+          {
+            "text": "Nhận thông tin phản hồi"
+          },
+          {
+            "text": "Tạo sự tập trung và hỗ trợ nhóm tốt hơn từ khách hàng"
+          },
+          {
+            "text": "Thuận tiện khi phân tích phản hồi"
+          }
+        ]
+      },
+      {
+        "questionText": "Phương án nào không phải ưu điểm của phương pháp lá bài lập kế hoạch ?",
+        "options": [
+          {
+            "text": "Thu được nhiều ý kiến đóng góp của các chuyên gia"
+          },
+          {
+            "text": "Các nghiên cứu chỉ ra ước lượng trung bình và thảo luận nhóm sẽ cho kết quả tốt hơn"
+          },
+          {
+            "text": "Hội thoại giữa các thành viên đưa đến kết quả ước lượng chính xác hơn",
+            "correct": true
+          },
+          {
+            "text": "Thu được ý kiến đóng góp của khách hàng"
+          }
+        ]
+      },
+      {
+        "questionText": "Sự khác nhau giữa mô hình truyền thống (thác nước) và mô hình tiếp cận tăng trưởng (Scrum) là gì?",
+        "options": [
+          {
+            "text": "Khả năng thành công dự án khi áp dụng mô hình thác nước là cao và khả năng thành công dự án khi áp dụng mô hình Scrum là thấp"
+          },
+          {
+            "text": "Trong mô hình truyền thống (thác nước), quá trình phát triển được chia thành các Sprint. Trong mô hình Scrum, quá trình phát triển không được chia thành các Sprint"
+          },
+          {
+            "text": "Scrum Master là một vị trí quan trọng trong dự án theo mô hình thác nước. Trong mô hình Scrum không có vị trí Scrum Master",
+            "correct": true
+          },
+          {
+            "text": "Trong mô hình thác nước, sản phẩm của khách hàng được xác định ở giai đoạn cuối. Trong mô hình Scrum, sản phẩm được chuyển giao cho khách hàng theo từng Sprint"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "idSubjects": "WEBU",
+    "questions": [
+      {
+        "questionText": "Trong Dreamweaver CS4 muốn  liên kết bên ngoài website, người dùng sử dụng loại liên kết nào?",
+        "options": [
+          {
+            "text": "Liên kết tương đối"
+          },
+          {
+            "text": "Liên kết tới Email"
+          },
+          {
+            "text": "Liên kết tuyệt đối",
+            "correct": true
+          }
+        ]
+      },
+      {
+        "questionText": "Để xem và thay đổi định dạng hiện tại của một đối tượng (text/image), bạn nên sử dụng",
+        "options": [
+          {
+            "text": "Property Inspector"
+          },
+          {
+            "text": "Insert bar"
+          },
+          {
+            "text": "Tag Inspector",
+            "correct": true
+          },
+          {
+            "text": "File panel"
+          }
+        ]
+      },
+      {
+        "questionText": "Chức năng nào sau đây không phải là một trong những chức năng chính của các công cụ hỗ trợ thiết kế web",
+        "options": [
+          {
+            "text": "Hỗ trợ chỉnh sửa ảnh",
+            "correct": true
+          },
+          {
+            "text": "Hỗ trợ quản lý site và FTP"
+          },
+          {
+            "text": "Cung cấp môi trường soạn thảo và code"
+          },
+          {
+            "text": "Unload"
+          }
+        ]
+      },
+      {
+        "questionText": "Chương trình hoạt động bằng cách dịch mã HTML thành trang Web là",
+        "options": [
+          {
+            "text": "Trình duyệt",
+            "correct": true
+          },
+          {
+            "text": "Hệ điều hành"
+          },
+          {
+            "text": "Phần mềm tiện ích"
+          },
+          {
+            "text": "Protocol"
+          }
+        ]
+      },
+      {
+        "questionText": "Để thêm các ký tự đặc biệt vào trang web, trên menu/thanh Insert, bạn cần chọn mục nào",
+        "options": [
+          {
+            "text": "Conment"
+          },
+          {
+            "text": "HTML/Special characters",
+            "correct": true
+          },
+          {
+            "text": "HTML/Text Object"
+          },
+          {
+            "text": "Image"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "idSubjects": "VBPR",
+    "questions": [
+      {
+        "questionText": "Thuộc tính nào để thay đổi màu nền của Form?",
+        "options": [
+          {
+            "text": "Color"
+          },
+          {
+            "text": "BgColor"
+          },
+          {
+            "text": "BackgroundColor"
+          },
+          {
+            "text": "BackColor",
+            "correct": true
+          }
+        ]
+      },
+      {
+        "questionText": "Để kích thước của form mở rộng đầy màn hình khi chạy chương trình thì cần thiết lập giá trị nào cho thuộc tính WindowState?",
+        "options": [
+          {
+            "text": "Maximized",
+            "correct": true
+          },
+          {
+            "text": "Normal"
+          },
+          {
+            "text": "Minimized"
+          },
+          {
+            "text": "MinMax"
+          }
+        ]
+      },
+      {
+        "questionText": "Để hiện cửa sổ Toolbox người dùng chọn thao tác nào?",
+        "options": [
+          {
+            "text":"Tools \u003e Toolbox"
+          },
+          {
+            "text": "View \u003e Toolbox",
+            "correct": true
+          },
+          {
+            "text":"Build \u003e Toolbox"
+          },
+          {
+            "text": "Project \u003e Toolbox"
+          }
+        ]
+      },
+      {
+        "questionText": "Ngôn ngữ lập trình nào dưới đây là ngôn ngữ lập trình bậc thấp?",
+        "options": [
+          {
+            "text": "Pascal"
+          },
+          {
+            "text": "Assembly",
+            "correct": true
+          },
+          {
+            "text": "Visual Basic"
+          },
+          {
+            "text": "C#"
+          }
+        ]
+      },
+      {
+        "questionText": "Ngôn ngữ lập trình nào tập trung vào đối tượng, mỗi đối tượng đều có thuộc tính và phương thức của chính nó?",
+        "options": [
+          {
+            "text": "Ngôn ngữ máy"
+          },
+          {
+            "text": "Ngôn ngữ lập trình cấu trúc"
+          },
+          {
+            "text": "Ngôn ngữ Assembly"
+          },
+          {
+            "text": "Ngôn ngữ lập trình hướng đối tượng",
+            "correct": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "idSubjects": "PHPP",
+    "questions": [
+      {
+        "questionText": "Lập trình viên thường gán giá trị mặc định cho các điều khiển trong phương thức xử lý sự kiện ........... của trang",
+        "options": [
+          {
+            "text": "Prerender"
+          },
+          {
+            "text": "Init"
+          },
+          {
+            "text": "Load",
+            "correct": true
+          },
+          {
+            "text": "Unload"
+          }
+        ]
+      },
+      {
+        "questionText": "Lập trình viên thường gán giá trị mặc định cho các điều khiển trong phương thức xử lý sự kiện ........... của trang",
+        "options": [
+          {
+            "text": "Prerender"
+          },
+          {
+            "text": "Init"
+          },
+          {
+            "text": "Load",
+            "correct": true
+          },
+          {
+            "text": "Unload"
+          }
+        ]
+      },
+      {
+        "questionText": "Lập trình viên thường gán giá trị mặc định cho các điều khiển trong phương thức xử lý sự kiện ........... của trang",
+        "options": [
+          {
+            "text": "Prerender"
+          },
+          {
+            "text": "Init"
+          },
+          {
+            "text": "Load",
+            "correct": true
+          },
+          {
+            "text": "Unload"
+          }
+        ]
+      },
+      {
+        "questionText": "Lập trình viên thường gán giá trị mặc định cho các điều khiển trong phương thức xử lý sự kiện ........... của trang",
+        "options": [
+          {
+            "text": "Prerender"
+          },
+          {
+            "text": "Init"
+          },
+          {
+            "text": "Load",
+            "correct": true
+          },
+          {
+            "text": "Unload"
+          }
+        ]
+      },
+      {
+        "questionText": "Lập trình viên thường gán giá trị mặc định cho các điều khiển trong phương thức xử lý sự kiện ........... của trang",
+        "options": [
+          {
+            "text": "Prerender"
+          },
+          {
+            "text": "Init"
+          },
+          {
+            "text": "Load",
+            "correct": true
+          },
+          {
+            "text": "Unload"
+          }
+        ]
+      }
+    ]
+  }
+]

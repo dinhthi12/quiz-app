@@ -20,11 +20,25 @@ export class QuizPhpComponent implements OnInit {
   interval$: any;
   progress: string = '0';
   isQuizCompleted: boolean = false;
-
-  constructor(private QuizPhpService: QuizPhpService,
-    private ActivatedRoute: ActivatedRoute) {}
-
+  isEmptyQuiz: boolean = false;
+  constructor(
+    private QuizPhpService: QuizPhpService,
+    private ActivatedRoute: ActivatedRoute,
+    private httpClient: HttpClient
+  ) {}
+  private _quizPhpJson = 'assets/db/Quizs/QuizAll.json';
   ngOnInit(): void {
+    this.httpClient.get<any>(this._quizPhpJson).subscribe((data: any) => {
+      for (let element of data) {
+        if (element.idSubjects == this.ActivatedRoute.snapshot.params['id']) {
+          this.quizList = element.questions;
+          this.isEmptyQuiz = true;
+        }
+      }
+      if (this.isEmptyQuiz == false) {
+        console.log('danh sách rỗng');
+      }
+    });
     // this.name = localStorage.getItem('name')!;
 
     //console.log(this.ActivatedRoute.snapshot.params['id']);
@@ -33,9 +47,7 @@ export class QuizPhpComponent implements OnInit {
   }
 
   getAllQuestions() {
-    this.QuizPhpService.getAllQuizsByidSubject(this.ActivatedRoute.snapshot.params['id']).subscribe((res) => {
-      this.quizList = res.questions;
-    });
+    console.log(this.QuizPhpService.getAllQuizsByidSubject(this.ActivatedRoute.snapshot.params['id']));
   }
 
   nextQuestion() {

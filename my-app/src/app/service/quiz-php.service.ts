@@ -14,7 +14,7 @@ export class QuizPhpService {
 
   getAllQuizsByidSubject(id: string): Observable<any> {
     this.httpClient.get<any>(this._quizPhpJson).subscribe((data) => {
-      console.log(data);
+      //console.log(data);
       this.List = data;
     });
 
