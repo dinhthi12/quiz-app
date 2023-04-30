@@ -1,11 +1,13 @@
 <ng-container *ngIf="!isQuizCompleted">
-<div class="flex justify-around py-3 text-lg font-bold">
+  <div class="flex justify-around py-3 text-lg font-bold">
 
-  <div class="row">
-    <div class="col-sm-8">  <span>Câu hỏi {{currentQuestion + 1}} / {{quizList.length}}</span></div>
-    <div class="col-sm-4"><h5>{{counter}} sec ⌛</h5></div>
+    <div class="row">
+      <div class="col-sm-8"> <span >Câu hỏi {{currentQuestion + 1}} / {{quizList.length}}</span></div>
+      <div class="col-sm-4">
+        <h5>{{counter}} sec ⌛</h5>
+      </div>
+    </div>
   </div>
-</div>
   <div class="question mt-6">
     <div class="bg-white px-3 py-4 border rounded-xl  border-slate-300 w-full ">
       <h3 class="text-xl font-bold">{{quizList[currentQuestion]?.questionText}}</h3>
@@ -14,33 +16,46 @@
 
 
   <div class="options mt-2">
-    <ol class="list-decimal ml-5" *ngFor="let option of quizList[currentQuestion]?.options">
-      <li class="mt-2" (click)="answer(currentQuestion+1,option)">
-        <div style="cursor: pointer;
-        " class="px-3 py-4 border rounded-xl border-slate-300 w-full text-lg font-semibold hover">
+    <div
+     class="px-3 py-4 border rounded-xl border-slate-300 w-full text-lg font-semibold">
+      <ol class="list-decimal ml-5" *ngFor="let option of quizList[currentQuestion]?.options; let i = index">
 
-          <label for="">{{option.text}}</label>
-        </div>
-      </li>
+        <li class="mt-2" >
 
-    </ol>
+
+          <input type="radio" (click)="answer(currentQuestion+1,option,i+1)" [checked]="this.map.get(currentQuestion+1)== (i+1)"/>
+          <label for=""> {{option.text}}</label>
+          <!-- <p >{{i+1}}</p>
+          <p>{{this.map.get(currentQuestion+1)}}</p> -->
+        </li>
+
+      </ol>
+    </div>
   </div>
 
   <br>
 
-<div class="flex justify-between mt-10">
-  <button tyle="cursor: pointer;" class="btn btn-light"
-    (click)="prevQuestions()" [disabled]="currentQuestion === 0">
-    <i class="fa-solid fa-left-long"></i>
-  </button>
 
-  <button style="cursor: pointer;"
-    class="btn btn-light"
-    (click)="nextQuestions()" [disabled]="currentQuestion === quizList.length -1">
+  <div class="flex justify-between mt-10">
+    <div class="row">
+      <div class="col-sm-8"> <button style="cursor: pointer;" class="btn btn-light" (click)="prevQuestions()"
+          [disabled]="currentQuestion === 0">
+          <i class="fa-solid fa-left-long"></i>
+        </button>
 
-    <i class="fa-solid fa-right-long"></i>
-  </button>
-</div>
+        <button style="cursor: pointer;" class="btn btn-light" (click)="nextQuestions()"
+          [disabled]="currentQuestion === quizList.length -1">
+
+          <i class="fa-solid fa-right-long"></i>
+        </button>
+      </div>
+      <div class="col-sm-4"><button (click)="endQuiz()" type="submit" class="btn btn-primary">Kết thúc bài thi</button>
+      </div>
+    </div>
+
+
+
+  </div>
 </ng-container>
 
 <ng-container *ngIf="isQuizCompleted">

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
@@ -6,31 +7,25 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.scss']
 })
-export class RegisterComponent {
-  registerForm:any = FormGroup;
+export class RegisterComponent implements OnInit{
+  registerForm:FormGroup | any;
   submitted = false;
-  constructor( private formBuilder: FormBuilder){}
-  //Add user form actions
-  get f() { return this.registerForm.controls; }
-  onSubmit() {
+  constructor( private formBuilder: FormBuilder,
+    private HttpClient: HttpClient){}
 
-    this.submitted = true;
-    // stop here if form is invalid
-    if (this.registerForm.invalid) {
-        return;
-    }
-    //True if all the fields are filled
-    if(this.submitted)
-    {
-      alert("Great!!");
-    }
 
+  ngOnInit(): void {
+    this.registerForm = this.formBuilder.group({
+      username: ['', [Validators.required]],
+
+    });
   }
-    ngOnInit() {
-      //Add User form validations
-      this.registerForm = this.formBuilder.group({
-      email: ['', [Validators.required, Validators.email]],
-      password: ['', [Validators.required]]
-      });
-    }
+
+  signUp(){
+    this.HttpClient.post<any>('assets/db/students.json',this.registerForm.value).subscribe(data => {
+      console.log(data);
+    })
+  }
+  //Add user form actions
+
 }

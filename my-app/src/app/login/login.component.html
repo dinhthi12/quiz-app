@@ -22,7 +22,7 @@
           <!-- Password input -->
           <div class="form-outline mb-4">
             <input [ngClass]="{ 'is-invalid': submitted && f.password.errors }" placeholder="Mật khẩu" type="password"
-              id="form1Example23" formControlName="password" class="form-control form-control-lg" [(ngModel)]="loginObj.pass
+              id="form1Example23" formControlName="password" class="form-control form-control-lg" [(ngModel)]="loginObj.password
               "/>
             <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
               <div *ngIf="f.password.errors.required">Mật khẩu không đúng</div>
@@ -57,3 +57,5 @@
     </div>
   </div>
 </section>
+
+

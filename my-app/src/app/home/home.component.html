@@ -1,24 +1,29 @@
-<div class="row">
-
-  <div class="col-sm-6" *ngFor="let home of homeList  | paginate
+<div class="container-xl px-4 mt-4">
+  <div class="row">
+    <!-- totalItems: total -->
+    <div class="col-sm-6" *ngFor="let home of homeList  | paginate
   : {
       itemsPerPage: tableSize,
-      currentPage: page,
-      totalItems: count
+      currentPage: page
     };
+
 let i = index">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title h1-responsive font-weight-bold my-4">{{home.Name}}</h5>
-        <p class="card-text"> <a href="#">Click</a> để ôn tập trước khi làm bài quiz {{home.Name}}</p>
-        <img src="assets/img/logos/{{home.Logo}}">
-        <a [routerLink]="['quiz/' + home.Id]" class="btn btn-primary">Làm bài</a>
+      <div class="card mb-4 mb-xl-0">
+        <div class="card-body text-center" style="padding :3% !important">
+          <h5 class="card-title h1-responsive font-weight-bold card-header">{{home.Name}}</h5>
+          <br>
+          <p class="card-text small font-italic text-muted mb-4"> <a href="#">Click</a> để ôn tập trước khi làm bài quiz
+            {{home.Name}}</p>
+          <img src="assets/img/logos/{{home.Logo}}">
+          <a [routerLink]="['quiz/' + home.Id]" (click)="check()" class="btn btn-primary">Làm bài</a>
 
+        </div>
       </div>
+      <br>
     </div>
-    <br>
-  </div>
 
+  </div>
 </div>
+
 <pagination-controls previousLabel="Prev" nextLabel="Next" (pageChange)="onTableDataChange($event)">
 </pagination-controls>

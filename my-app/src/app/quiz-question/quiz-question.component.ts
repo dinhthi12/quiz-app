@@ -18,6 +18,8 @@ export class QuizQuestionComponent implements OnInit {
   correctAnswer: number = 0;
   incorrectAnswer: number = 0;
   public points: number = 0;
+
+   map =new Map();
   //isEmptyQuiz: boolean = false;
   private _quizJson = 'assets/db/Quizs/QuizAll.json';
 
@@ -44,6 +46,7 @@ export class QuizQuestionComponent implements OnInit {
           console.log(this.quizList);
           //this.isEmptyQuiz = true;
         }
+
       }
     });
   }
@@ -51,10 +54,10 @@ export class QuizQuestionComponent implements OnInit {
   startCounter() {
     this.interval$ = interval(1000).subscribe(() => {
       this.counter--;
-      //if counter == 0 => back
+      //if counter == 0 => end quiz
       if (this.counter === 0) {
-        this.currentQuestion++;
-        this.counter = 60;
+        this.isQuizCompleted = true;
+        this.stopCounter();
       }
     });
 
@@ -63,28 +66,52 @@ export class QuizQuestionComponent implements OnInit {
     }, 600000);
   }
 
-  answer(currentQno: number, option: any) {
-    if (currentQno === this.quizList.length) {
-      this.isQuizCompleted = true;
-      this.stopCounter();
-    }
+  answer(currentQno: number, option: any,index :number) {
+    //nếu số câu hỏi = tổng số lượng câu hỏi thì end
+    // if (currentQno === this.quizList.length) {
+    //   this.isQuizCompleted = true;
+    //   this.stopCounter();
+    // }
+    this.map.set(currentQno, index);
+    console.log(this.map);
+
     if (option.correct) {
       this.points += 10;
       this.correctAnswer++;
-      setTimeout(() => {
-        this.currentQuestion++;
-        this.resetCounter();
-        // this.getProgressPercent();
-      }, 1000);
+
+      //lúc click sẽ tự chuyển đến câu tiếp theo
+      // setTimeout(() => {
+      //   if (currentQno === this.quizList.length) {
+      //     this.currentQuestion--;
+      //   }
+      //   if (this.currentQuestion < this.quizList.length) {
+      //     this.currentQuestion++;
+      //   }
+      //   //this.resetCounter();
+      //   // this.getProgressPercent();
+      // }, 1000);
     } else {
-      setTimeout(() => {
-        this.currentQuestion++;
-        this.resetCounter();
-        this.incorrectAnswer++;
+      // setTimeout(() => {
+      //   if (currentQno === this.quizList.length) {
+      //     this.currentQuestion--;
+      //   }
+      //   if (this.currentQuestion < this.quizList.length) {
+      //     this.currentQuestion++;
+      //   }
+        //this.resetCounter();
+
+
         // this.getProgressPercent();
-      }, 1000);
+      // }, 1000);
+      //this.incorrectAnswer++;
+      this.incorrectAnswer = this.quizList.length - this.correctAnswer;
       this.points -= 0;
     }
+  }
+
+  endQuiz() {
+    this.isQuizCompleted = true;
+    this.stopCounter();
   }
 
   resetCounter() {

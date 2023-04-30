@@ -52,11 +52,14 @@ export class LoginComponent implements OnInit {
     if(this.submitted)
     {
       alert("Đăng nhập không thành công");
+      this.login.reset();
     }
 
   }
   loginData(login: FormGroup) {
 
+
+//
 
 
     this.httpClient.get<any>('assets/db/Students.json').subscribe((data) => {

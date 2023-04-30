@@ -4,7 +4,7 @@
         "password": "iloveyou",
         "fullname": "Nguyễn Văn Tèo",
         "email": "teonv@gmail.com",
-        "gender": "true",
+        "gender": "Nam",
         "birthday": "1995-12-21",
         "schoolfee": "1500000",
         "marks": "0"
@@ -14,7 +14,7 @@
         "password": "iloveyou",
         "fullname": "Nguyễn Văn Chí Phèo",
         "email": "pheonv@gmail.com",
-        "gender": "true",
+        "gender": "Nam",
         "birthday": "1985-10-11",
         "schoolfee": "2500000",
         "marks": "0"
@@ -24,9 +24,10 @@
         "password": "iloveyou",
         "fullname": "Phạm Thị Nở",
         "email": "nopt@gmail.com",
-        "gender": "false",
+        "gender": "Nữ",
         "birthday": "1993-05-15",
         "schoolfee": "2000000",
         "marks": "0"
     }
+
 ]
